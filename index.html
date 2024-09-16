@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="script.js"></script>
-    <input type="text" name="" id="zeroum" placeholder="primeiro"> <br>
-    <input type="text" name="" id="zerodois" placeholder="segundo">
-    <div>
-        <input type="radio" name="operacao" value="soma"> soma
-        <input type="radio" name="operacao" value="multiplicacao"> multiplicacao
-        <input type="radio" name="operacao" value="divisao"> divisao
-        <input type="radio" name="operacao" value="subtracao"> subtracao
+    <h1>Equacao de segundo grau sem uma incognita</h1>
+    <h2>ax2 + bx + c = 0</h2>
+    <div class="conta">
+        <input type="text" placeholder="a" id="a" class="contaelementos">
+        <p class="contaelementos">x2  mais</p>
+        <input type="text" placeholder="b" id="b" class="contaelementos">
+        <p class="contaelementos">x mais</p>
+        <input type="text" placeholder="c" id="c" class="contaelementos">
+        <p class="contaelementos">= 0</p>
     </div>
-    <button onclick="calcula()">calulcar</button>
-    <p>Resultado: <span id="Resultado"></span></p>
+    <button onclick="bask()">resolver</button>
+    <span id="res">Resultado:</span>
+
+
 </body>
+
+
+
 </html>
